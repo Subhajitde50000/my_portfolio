@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="scroll-progress"></div>
+    <div id="particles-js"></div>
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+    <nav>
+        <div class="logo">Portfolio</div>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li style="--i:1"><a href="#home">Home</a></li>
+            <li style="--i:2"><a href="#about">About</a></li>
+            <li style="--i:3"><a href="#projects">Projects</a></li>
+            <li style="--i:4"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <div class="profile-ring"></div>
+                <div class="profile-image">
+                    <!-- Replace 'your-photo.jpg' with your actual photo path -->
+                    <img src="img/profail.jpg" alt="Profile Picture">
+                </div>
+            </div>
+            <h1 class="animate-text">Hi, I'm <span class="gradient-text">Your Name</span></h1>
+            <p class="typing-text"></p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text fade-in">
+                <p>Your description here...</p>
+            </div>
+            <div class="skills">
+                <div class="skill-item">HTML</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">JavaScript</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-thumbnail">
+                    <img src="img/project.jpeg" alt="Project 1">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="live-demo">Live Demo</a>
+                            <a href="#" class="source-code">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <h3>Project 1</h3>
+                <p>A detailed description of your project. Explain what it does and what problem it solves.</p>
+                <div class="tech-stack">
+                    <span class="tech">React</span>
+                    <span class="tech">Node.js</span>
+                    <span class="tech">MongoDB</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-thumbnail">
+                    <img src="img/project.jpeg" alt="Project 2">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="live-demo">Live Demo</a>
+                            <a href="#" class="source-code">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <h3>Project 2</h3>
+                <p>Another amazing project description showcasing your skills and creativity.</p>
+                <div class="tech-stack">
+                    <span class="tech">Vue.js</span>
+                    <span class="tech">Firebase</span>
+                    <span class="tech">Tailwind</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-section">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h3>Senior Developer</h3>
+                <p>2022 - Present</p>
+                <p>Company Name</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h3>Web Developer</h3>
+                <p>2020 - 2022</p>
+                <p>Company Name</p>
+            </div>
+            <!-- Add more timeline items -->
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-progress">
+            <div class="progress-item">
+                <div class="progress-title">
+                    <span>HTML/CSS</span>
+                    <span>90%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="transform: scaleX(0.9)"></div>
+                </div>
+            </div>
+            <!-- Add more progress bars -->
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-code service-icon"></i>
+                <h3>Web Development</h3>
+                <p>Custom websites and web applications</p>
+            </div>
+            <!-- Add more service cards -->
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="img/profail.jpg" alt="Client">
+                    </div>
+                    <p>"Amazing work and great communication!"</p>
+                    <h4>John Doe</h4>
+                </div>
+                <!-- Add more testimonials -->
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="testimonial-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <div class="language-switcher">
+        <button class="language-btn" data-lang="en">EN</button>
+        <button class="language-btn" data-lang="es">ES</button>
+        <button class="language-btn" data-lang="fr">FR</button>
+    </div>
+
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="#home"><i class="fas fa-chevron-right"></i>Home</a>
+                    <a href="#about"><i class="fas fa-chevron-right"></i>About</a>
+                    <a href="#projects"><i class="fas fa-chevron-right"></i>Projects</a>
+                    <a href="#contact"><i class="fas fa-chevron-right"></i>Contact</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <div class="footer-links">
+                    <a href="mailto:email@example.com"><i class="fas fa-envelope"></i>email@example.com</a>
+                    <a href="tel:+1234567890"><i class="fas fa-phone"></i>+1 234 567 890</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>Your Location</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Me</h3>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+        <a href="#" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
